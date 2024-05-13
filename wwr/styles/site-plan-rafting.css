@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font:weight1,weight2&display=swap');
+
+
+/* Body selector rule */
+/* Body selector rule */
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+  }
+  
+
+/* Define CSS variables in the :root pseudo-class selector */
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent-color: #a43312;
+  --additional-accent-color: #381d2a;
+  --heading-font: 'Roboto', sans-serif; /* Roboto font family */
+  --paragraph-font: 'Roboto', sans-serif; /* Roboto font family */
+  --nav-background-color: #f9f9f9; /* Example background color */
+  --nav-link-color: #333; /* Example link color */
+  --nav-hover-link-color: #fff; /* Example hover link color */
+  --nav-hover-background-color: #396e94; /* Example hover background color */
+}
+
+/* Grouping selector for headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header selector */
+header {
+  padding: 20px;
+  background-color: var(--accent-color);
+}
+
+/* Paragraph selector */
+p {
+  padding: 25px;
+}
+
+/* Nav selector and anchor tag children */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
