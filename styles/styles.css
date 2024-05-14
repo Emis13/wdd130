@@ -1,4 +1,10 @@
-nav{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
     background-color: steelblue;
     padding: 10px;
 }
@@ -7,9 +13,10 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none; /* Added to remove underline from links */
 }
 
-h1{
+h1 {
     color: steelblue;
 }
 
@@ -19,8 +26,28 @@ img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin-left: 20px;
 }
 
 p {
     padding: 10px;
+}
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    position: relative; /* Combined with previous declaration */
+}
+
+.overlay-heading {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
 }
